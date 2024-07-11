@@ -4,5 +4,14 @@ function checkspeed() {
 
     if (speed < 70){
         console.log("Ok");
-    } else 
+    } else {
+        let demeritpoints = Math.floor((speed - 70) / 5);
+        console.log("points:" + demeritpoints);
+
+        if (demeritpoints > 12) {
+            console.log ("License suspended");
+        }
+    }
 }
+
+checkspeed();
